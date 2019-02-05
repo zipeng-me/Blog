@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+<title>博主提示</title>
+<link rel="stylesheet" type="text/css" href="static/css/mdialog.css">
+<style type="text/css">
+	input{
+		width: 70px;
+		height:20px;
+		margin:100px auto;
+	}
+</style>
+</head>
+<body>
+
+    <script type="text/javascript" src="static/js/zepto.mdialog.js"></script>
+    <script type="text/javascript" src="static/js/mdialog.js"></script>
+{% block style_win %}
+    <script type="text/javascript">
+    //提示信息
+    new TipBox({type:'tip',str:'只有博主才可以发表博客！您可以欣赏评论-.-!',clickDomCancel:true,setTime:6000,hasBtn:true});
+    </script>
+{% endblock %}
+</body>
+</html>
